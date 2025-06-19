@@ -1,0 +1,3 @@
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c:83:10:DBGMCU_GetREVID	1
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c:93:10:DBGMCU_GetDEVID	1
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c:133:6:DBGMCU_Config	6
