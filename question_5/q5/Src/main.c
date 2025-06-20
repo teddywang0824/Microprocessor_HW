@@ -13,7 +13,6 @@ uint32_t entry_pwidth = 0, exit_pwidth = 0;
 
 uint16_t parking = 20;
 
-uint8_t exit_flag = 0;
 uint8_t toggle_flag = 0;
 
 void delay_10us(uint32_t t) {
@@ -235,7 +234,7 @@ int main(void) {
 					entry_measurement_done = 0;
 					USART1_SendString("Car : ");
 					car = 20 - parking;
-					if(car > 10) {
+					if(car >= 10) {
 						USART1_SendChar(car/10 + '0');
 						USART1_SendChar(car%10 + '0');
 						USART1_SendChar('\r');
@@ -260,7 +259,7 @@ int main(void) {
 					}
 					car = 20 - parking;
 					USART1_SendString("Car : ");
-					if(car > 10) {
+					if(car >= 10) {
 						USART1_SendChar(car/10 + '0');
 						USART1_SendChar(car%10 + '0');
 						USART1_SendChar('\r');
@@ -277,7 +276,7 @@ int main(void) {
 				else {
 					car = 20 - parking;
 					USART1_SendString("Car : ");
-					if(car > 10) {
+					if(car >= 10) {
 						USART1_SendChar(car/10 + '0');
 						USART1_SendChar(car%10 + '0');
 						USART1_SendChar('\r');
@@ -302,7 +301,7 @@ int main(void) {
 					exit_measurement_done = 0;
 					USART1_SendString("Car : ");
 					car = 20 - parking;
-					if(car > 10) {
+					if(car >= 10) {
 						USART1_SendChar(car/10 + '0');
 						USART1_SendChar(car%10 + '0');
 						USART1_SendChar('\r');
@@ -324,9 +323,9 @@ int main(void) {
 							delay_10us(10000);
 						}
 					}
-					USART1_SendString("Car: ");
+					USART1_SendString("Car : ");
 					car = 20 - parking;
-					if(car > 10) {
+					if(car >= 10) {
 						USART1_SendChar(car/10 + '0');
 						USART1_SendChar(car%10 + '0');
 						USART1_SendChar('\r');
@@ -339,7 +338,7 @@ int main(void) {
 				} else {
 					USART1_SendString("Car : ");
 					car = 20 - parking;
-					if(car > 10) {
+					if(car >= 10) {
 						USART1_SendChar(car/10 + '0');
 						USART1_SendChar(car%10 + '0');
 						USART1_SendChar('\r');
@@ -372,7 +371,7 @@ int main(void) {
 				entry_measurement_done = 0;
 				USART1_SendString("Car : ");
 				car = 20 - parking;
-				if(car > 10) {
+				if(car >= 10) {
 					USART1_SendChar(car/10 + '0');
 					USART1_SendChar(car%10 + '0');
 					USART1_SendChar('\r');
@@ -395,7 +394,7 @@ int main(void) {
 				}
 				car = 20 - parking;
 				USART1_SendString("Car : ");
-				if(car > 10) {
+				if(car >= 10) {
 					USART1_SendChar(car/10 + '0');
 					USART1_SendChar(car%10 + '0');
 					USART1_SendChar('\r');
@@ -408,7 +407,7 @@ int main(void) {
 			} else {
 				USART1_SendString("Car : ");
 				car = 20 - parking;
-				if(car > 10) {
+				if(car >= 10) {
 					USART1_SendChar(car/10 + '0');
 					USART1_SendChar(car%10 + '0');
 					USART1_SendChar('\r');

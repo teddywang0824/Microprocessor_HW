@@ -346,7 +346,16 @@ pcf 檔案 : [question_4/q4.pcf](question_4/q4.pcf)
 
 pcf 檔案 : [question_5/q5.pcf](question_5/q5.pcf)
 
+影片連結 : https://youtu.be/Cuuo0i9GmN8
+
 ### i. 超音波感測（建議使用 Timer2）
+程式碼邏輯 :
+
+1. 利用 Systick 產生 10 微秒的中斷，並利用計數(`tick_ms`)的方式產 delay 。
+2. 超音波感測則利用GPIO的中斷。當Echo端有訊號時，使用EXIT紀錄當下的 `tick_ms`，然後在訊號中斷時再紀錄一次，減掉之前的就可以得到Echo的時長。
+3. 利用 `choose_flag` 作為要送出哪個超音波 Trig 的flag，0是入口，1是出口。
+4. 在發出 Trig 時紀錄當下的`tick_ms`，然後在結束時對照是否有delay 2.5s，如果沒有則delay到 2.5s。
+
 #### A. 入口每 5 秒產生一個 trig 檢測是否有車子要進來。
 ---
 Ans :
