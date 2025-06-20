@@ -341,13 +341,76 @@ int main(void) {
 pcf 檔案 : [question_4/q4.pcf](question_4/q4.pcf)
 
 ## 5. 下列請以 Interrupt 與 Timer 完成系統整合實現停車場系統（有關時間的都要用 Timer 或 SysTick 實現）：
+
+完整專案程式碼 : [question_5/q5/Src/main.c](question_5/q5/Src/main.c)
+
+pcf 檔案 : [question_5/q5.pcf](question_5/q5.pcf)
+
 ### i. 超音波感測（建議使用 Timer2）
 #### A. 入口每 5 秒產生一個 trig 檢測是否有車子要進來。
+---
+Ans :
+* 使用 PA4 作為入口超音波的 Trig ，PA5 為入口超音波的 Echo。
+
+結果截圖 : 
+![](question_5/q5_1A.png)
+
 #### B. 出口先延遲2.5秒再每5秒產生一個trig是否有車子要出去。每五秒 trig。入口跟出口 trig 時間相差2.5秒。
+---
+Ans :
+* 使用 PA2 作為出口超音波的 Trig ，PA3 為出口超音波的 Echo。
+
+先延遲 2.5 s (跟入口差2.5s):
+![](question_5/q5_1B-1.png)
+
+每5秒產生一個trig :
+![](question_5/q5_1B-2.png)
+
 #### C. 使用中斷捕捉 Echo 上升時間和下降時間，然後透過下面公式轉換成公尺。
+---
+Ans :
+
+將入口設為 92 cm
+![](question_5/q5_1C-1.png)
+
+查看波型結果
+![](question_5/q5_1C-2.png)
+
+$$(0.005342 * 343 / 2 * 100) = 91.6$$
+與預設吻合
 
 ### ii.	伺服馬達閘門
 #### A. 當出入口的Echo 讀到的值小於 100m，相對應的閘門要打開讓車子進出，然後關閉閘門(伺服馬達打開和關閉閘門90度轉動)。
+---
+Ans :
+
+入口控制 :
+![](question_5/q5_2A-1.png)
+
+出口控制 :
+![](question_5/q5_2A-2.png)
+
 #### B. 車輛進入時剩餘車位減1，車輛出去時剩餘車位加1，並將剩餘車位數顯示於2-digit七段顯示器(車位數初始值20)。
+---
+Ans :
+
+初始值照片 :
+![](question_5/q5_2B-1.png)
+
+七段顯示器顯示當前剩餘車格數 :
+![](question_5/q5_2B-2.png)
+
 #### C. 當車位停滿時，七段顯示器顯示00並以一秒為週期進行閃爍(連續重複亮0.5 sec與暗0.5 sec)。此時，閘門維持不動。
+---
+Ans :
+
+閘門維持不動，一秒週期閃爍 :
+![](question_5/q5_2C-1.png)
+![](question_5/q5_2C-2.png)
+
 #### D. 透過藍芽(USART1)傳送目前車輛數目給 IO Virtual Term (轉成兩個數字的ASCII Code後傳送)。
+---
+Ans :
+
+IO 顯示當前車輛數目 :
+![](question_5/q5_2D.png)
