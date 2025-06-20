@@ -8,10 +8,6 @@ void GPIOA_Init_Trig() {
 }
 
 void delay_us(int us) {
-//    SysTick->LOAD = us * 27 - 1;
-//    SysTick->CTRL = 0x01;
-//    while((SysTick->CTRL&(1<<16))==0);
-//    SysTick->CTRL = 0x00;
 	int temp = us * 9;
 	for(int i = temp;i>=0;i--);
 }

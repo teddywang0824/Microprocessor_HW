@@ -1,0 +1,5 @@
+../Src/main.c:3:6:GPIOA_Init_Trig	1
+../Src/main.c:10:6:delay_us	2
+../Src/main.c:15:6:delay_ms	2
+../Src/main.c:20:6:send_ultrasonic_trig	1
+../Src/main.c:28:5:main	1

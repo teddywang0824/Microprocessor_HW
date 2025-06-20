@@ -1,0 +1,11 @@
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:107:6:DMA_DeInit	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:201:6:DMA_Init	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:258:6:DMA_StructInit	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:293:6:DMA_Cmd	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:325:6:DMA_ITConfig	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:352:6:DMA_SetCurrDataCounter	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:370:10:DMA_GetCurrDataCounter	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:432:12:DMA_GetFlagStatus	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:522:6:DMA_ClearFlag	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:594:10:DMA_GetITStatus	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c:683:6:DMA_ClearITPendingBit	16	static

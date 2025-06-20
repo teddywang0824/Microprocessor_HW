@@ -1,0 +1,11 @@
+D:/microprocessor/hw/Microprocessor_HW/question_3/q3/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h:1211:22:__WFI	1
+D:/microprocessor/hw/Microprocessor_HW/question_3/q3/Libraries/CMSIS/CM3/CoreSupport/core_cm3.h:1212:22:__WFE	1
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:111:6:PWR_DeInit	1
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:123:6:PWR_BackupAccessCmd	3
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:136:6:PWR_PVDCmd	3
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:157:6:PWR_PVDLevelConfig	9
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:177:6:PWR_WakeUpPinCmd	3
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:196:6:PWR_EnterSTOPMode	6
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:236:6:PWR_EnterSTANDBYMode	1
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:259:12:PWR_GetFlagStatus	5
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c:285:6:PWR_ClearFlag	3

@@ -1,0 +1,12 @@
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:119:6:BKP_DeInit	8	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:133:6:BKP_TamperPinLevelConfig	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:146:6:BKP_TamperPinCmd	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:159:6:BKP_ITConfig	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:179:6:BKP_RTCOutputConfig	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:200:6:BKP_SetRTCCalibrationValue	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:221:6:BKP_WriteBackupRegister	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:240:10:BKP_ReadBackupRegister	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:258:12:BKP_GetFlagStatus	4	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:268:6:BKP_ClearFlag	4	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:279:10:BKP_GetITStatus	4	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c:289:6:BKP_ClearITPendingBit	4	static

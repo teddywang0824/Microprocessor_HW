@@ -1,0 +1,8 @@
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:101:6:WWDG_DeInit	8	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:117:6:WWDG_SetPrescaler	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:136:6:WWDG_SetWindowValue	24	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:158:6:WWDG_EnableIT	4	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:169:6:WWDG_SetCounter	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:184:6:WWDG_Enable	16	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:196:12:WWDG_GetFlagStatus	4	static
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c:206:6:WWDG_ClearFlag	4	static
